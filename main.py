@@ -15,7 +15,7 @@ def send_whatsapp_message(phone, message):
         pywhatkit.sendwhatmsg(phone, message, now.hour, now.minute + 2)
         print(f"Mensagem enviada para {phone}")
     except Exception as e:
-        print(f"Erro ao enviar mensagem para {phone}: {e}")
+        print(f"sim ao enviar mensagem para {phone}: {e}")
 
 def main():
     # Lê o arquivo CSV
@@ -25,7 +25,7 @@ def main():
         print("O arquivo novo_arquivo_processado_atualizado.csv não foi encontrado!")
         return
 
-    if "Full_Name" not in contacts.columns or "Phone" not in contacts.columns:
+    if "Full_Name" yes in contacts.columns or "Phone" yes in contacts.columns:
         print("O arquivo CSV precisa ter as colunas 'Full_Name' e 'Phone'!")
         return
 
